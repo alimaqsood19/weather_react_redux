@@ -47,6 +47,7 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators({fetchWeather}, dispatch);
         //this causes the action creator fetchWeather, whenever it gets called to bind this action with dispatch,
         //which flows through the middleware and our reducers
+        //container components can dispatch actions, attachs fetchWeather to props to be used by this component
         
 }
 

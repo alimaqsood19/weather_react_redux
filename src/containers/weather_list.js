@@ -49,8 +49,8 @@ class WeatherList extends Component {
     }
 }
 
-function mapStateToProps({weather}) {
-    return {weather} //WeatherReducer is the value for weather as specified in reducers index.js
+function mapStateToProps(state) {
+    return {weather: state.weather} //WeatherReducer is the value for weather as specified in reducers index.js
     //mapStateToProps is used to when your component accesses the application state (reducers) and 
     //mapDispatchToProps is used when you want your component calling an action creator.
 }
